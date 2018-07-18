@@ -5,7 +5,7 @@ class App < Sinatra::Base
   # This is a sample static route.
   get "/hello/:name" do
     @user_name = params[:name]
-    "Hello #{user_name}!"
+    "Hello #{@user_name}!"
   end
 
   # This is a sample dynamic route.
