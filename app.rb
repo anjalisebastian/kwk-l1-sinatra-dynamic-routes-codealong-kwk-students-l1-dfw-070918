@@ -3,7 +3,8 @@ require_relative 'config/environment'
 class App < Sinatra::Base
 
   # This is a sample static route.
-  get '/hello' do
+  get "/hello/ :name" do
+    @user_name = 
     "Hello World!"
   end
 
